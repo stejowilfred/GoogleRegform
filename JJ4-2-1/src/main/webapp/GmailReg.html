@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+h1{display: inline-block;}
+#b{color:#070db8;}
+#r{color:#fa141f;}
+#o{color:#fa8620;}
+#g{color:#048a1f;}
+#fname{padding: 10px; background-color: transparent;width: 150px}
+#lname{padding: 10px; background-color: transparent;width: 150px}
+#uname{padding: 10px;background-color: transparent; width: 327px;}
+#pass,#cpass{padding: 10px;background-color: transparent; width: 150px;}
+b{padding: 5px 5px 5px 5px}
+form{display: inline-block;}
+#t{background-color: #2cab96;border: none;padding: 10px; color: white;}
+body{
+align-items: center;
+background-color: #edd1da;
+}
+</style>
+</head>
+<body marginwidth="37%">
+<div>
+<h1 id="b" style="margin-left: 37%">G</h1><h1 id="r">o</h1><h1 id="o">o</h1><h1 id="b">g</h1><h1 id="g">l</h1><h1 id="r">e</h1><br>
+<b style="margin-left: 41%">Sign Up</b>
+<h3 style="margin-left: 22%">to continue to application</h3>
+<form action="Gmail_reg" method="post" style="align-items: center;">
+<table>
+<tr><td><input id="fname" type="text" name="fname" placeholder="First Name"></td>
+<td><input id="lname" type="text" name="lname" placeholder="Last Name"></td></tr>
+<tr><td colspan="2"><input id="uname" type="text" name="uname" placeholder="Username"></td></tr>
+<tr><td id="sub" colspan="2"><font size="2">You can pick Email or mobile number as Username</font></td></tr>
+<tr><td><input id="pass" type="password" name="pass" placeholder="password"></td>
+<td><input id="cpass" type="password" name="cpass" placeholder="Confirm password"></td></tr>
+<tr><td><input type="checkbox" value="show me" onclick="fun()">Show Me</td></tr>
+<tr><td id="sub" colspan="2"><font size="2">Use 8 or more character with a mix of letter,numbers & symbols</font></td></tr>
+</table><br>
+I have an account <a href="Loginpage.html">Login Now</a>
+<table><tr><td colspan="2" align="center"><input id="t" type="submit" value="REGISTER"></td></tr></table>
+</form>
+</div>
+<script type="text/javascript">
+function fun(){
+	var c=document.getElementById("cpass")
+	var x = document.getElementById("pass");
+  if (x.type == "password" && c.type == "password") {
+    x.type = "text";
+    c.type="text";
+  } else {
+    x.type = "password";
+    c.type="password";
+  }}
+</script>
+</body>
+</html>
